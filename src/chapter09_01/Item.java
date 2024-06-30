@@ -14,8 +14,8 @@ public class Item {
 	
 //	メソッド
 	public void display () {
-		System.out.print(name + ":");
-		System.out.println(price + "円");
+		System.out.print(this.name + ":");
+		System.out.println(this.price + "円");
 	}
 	
 }
