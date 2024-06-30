@@ -5,6 +5,6 @@ public class Employee {
 	public String name;
 	
 	public void Operation () {
-		System.out.println(name + "は通常業務を行ないます。");
+		System.out.println(this.name + "は通常業務を行ないます。");
 	}
 }
