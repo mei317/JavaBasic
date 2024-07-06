@@ -7,7 +7,7 @@ public class Fighter {
 	
 	public Fighter() {
 		this.name = "戦士";
-		atk = 10;		
+		this.atk = 10;		
 	}
 	
 	public void attack() {
