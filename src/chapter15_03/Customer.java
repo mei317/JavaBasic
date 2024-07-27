@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Customer {
+class Customer {
 
 	public static void main(String[] args) {
 		
@@ -16,12 +16,11 @@ public class Customer {
 			"浅井 流々,xxxx@yahoo.co.jp,144-0034,東京都大田区西糀谷",
 			"浜口 英俊,yyyy@gmail.com,880-0879,宮崎県宮崎市宮崎駅東"
 		));
-
         
         customerList.forEach(customer -> processCustomer(customer));
 	}
 	
-    public static void processCustomer(String customer) {
+    private static void processCustomer(String customer) {
         String[] details = customer.split(",");
         String name = details[0];
         String email = details[1];
@@ -34,20 +33,19 @@ public class Customer {
         System.out.println(GetAddress(address));
     }
     
-	public static String GetName(String name)  {
+    private static String GetName(String name)  {
 		return "名前：" + name;
-		
 	}
 	
-	public static String GetEmail(String email)  {
+    private static String GetEmail(String email)  {
 		return "メールアドレス：" + email;
 	}
 	
-	public static String GetCode(String code)  {
+    private static String GetCode(String code)  {
 		return "郵便番号：" + code;
 	}
 	
-	public static String GetAddress(String address)  {
+    private static String GetAddress(String address)  {
 		return "住所：" + address;
 		
 	}

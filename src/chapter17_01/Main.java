@@ -1,6 +1,6 @@
 package chapter17_01;
 
-public class Main{
+class Main{
 	
     public static void main(String[] args){
     	
@@ -13,9 +13,9 @@ public class Main{
             
             int x = Integer.parseInt(args[0]);
             int y = Integer.parseInt(args[1]);
+            
             System.out.println(x / y);
             System.out.println("プログラムを終了します");
-            
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("引数の数が足りません");
         } catch (NumberFormatException e) {

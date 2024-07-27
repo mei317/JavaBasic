@@ -3,7 +3,7 @@ package chater17_02;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
 
-public class Main{
+class Main{
 
     public static void main(String[] args) {
     	
@@ -20,7 +20,9 @@ public class Main{
         }
     }
 
-    public static void loadFile() throws FileNotFoundException {
+    private static void loadFile() throws FileNotFoundException {
+    	
         FileReader fr = new FileReader("notfound.txt");
+        
     }
 }

@@ -1,14 +1,15 @@
 package chapter15_01;
 
-public class ExtensionExtractor {
+class ExtensionExtractor {
 	
     public static void main(String[] args) {
     	
-    	for(int i = 0; i < args.length; i++) {
-    		if (args.length >= 1) {
-                System.out.println(args[i].substring(args[i].lastIndexOf(".")));
+    	for(String name: args) {
+    		if (name.contains(".")) {
+                System.out.println(name.substring(name.lastIndexOf(".") + 1));
     		}
     	}
+    	
     }
     
 }

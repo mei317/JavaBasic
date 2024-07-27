@@ -3,7 +3,7 @@ package chapter15_02;
 import java.util.Calendar;
 import java.text.SimpleDateFormat;
 
-public class SetDate {
+class SetDate {
 
 	public static void main(String[] args) {
 
@@ -15,7 +15,7 @@ public class SetDate {
         
         String nextYearFormat = dateFormat.format(year.getTime());
 
-        System.out.println(nextYearFormat + "　以下");
+        System.out.println(nextYearFormat);
 
 	}
 

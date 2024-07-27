@@ -2,7 +2,7 @@ package chapter16_01;
 
 import java.util.ArrayList;
 
-public class FruitsList {
+class FruitsList {
 
 	public static void main(String[] args) {
 		
@@ -12,8 +12,9 @@ public class FruitsList {
 		fruits.add("いちご");
 		fruits.add("りんご");
 		
-        for (String fruit : fruits) {
+        for (String fruit: fruits) {
             System.out.println(fruit);
         }
 	}
+	
 }

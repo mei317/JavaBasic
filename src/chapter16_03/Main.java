@@ -4,8 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-
-public class Main {
+class Main {
 	
     public static void main(String[] args) {
         //HashMapインスタンスを生成
@@ -17,9 +16,10 @@ public class Main {
     	scores.put("英語", 70);
 
         //HashMapからkeySetを取り出し、拡張forで各科目の
-        //科目名と得点を表示する。
         Set<String> subjects = scores.keySet();
-        for (String subject : subjects) {
+        
+        //科目名と得点を表示する。
+        for (String subject: subjects) {
             int score = scores.get(subject);
             System.out.println(subject + ":" + score);
         }

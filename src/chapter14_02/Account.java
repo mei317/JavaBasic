@@ -2,17 +2,17 @@ package chapter14_02;
 
 import java.util.Scanner;
 
-public class Account {
+class Account {
 
 	private String accountNumber;
 	private int balance;
 	
-	public Account(String accountNumber, int balance) {
+	protected Account(String accountNumber, int balance) {
 		this.accountNumber = accountNumber;
 		this.balance = balance;
 	}
 	
-	public boolean inputNumber() {
+	protected boolean inputNumber() {
 		try (Scanner scanner = new Scanner(System.in)) {
 			String number = scanner.nextLine().trim();
 			return this.accountNumber.equals(number);
